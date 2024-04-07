@@ -1,0 +1,43 @@
+/* style.css */
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    color: #0f0;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.rod {
+    background-color: #333;
+    width: 20px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rod::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 20px;
+    background-color: #333;
+}
+
+.disk {
+    position: absolute;
+    height: 20px;
+    background-color: #0f0; /* Neon green */
+    border-radius: 5px;
+    transition: bottom 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
